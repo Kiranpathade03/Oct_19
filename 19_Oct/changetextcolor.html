@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="checkbox">Clicked To Change</label>
+    <input type="checkbox" name="" id="checkbox" onclick="check()">
+    <p id="colourchange">This is the text you want to change colour</p>
+    <script>
+        const checkbox = document.getElementById('checkbox');
+        const colourchange = document.getElementById('colourchange');
+
+        function check() {
+            if (checkbox.checked) {
+                document.getElementById('colourchange').style.color = 'red'
+            } else {
+                document.getElementById('colourchange').style.color = 'black'
+            }
+        }
+    </script>
+</body>
+
+</html>
